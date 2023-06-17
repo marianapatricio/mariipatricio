@@ -1,0 +1,78 @@
+<html>
+ <head>
+   <title>Contato</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	 <link rel="icon" type="image/png" href="fotos/logo.png">
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+    <script language="javascript" type="text/javascript">
+    function validar(){
+    var nome=form1.nome.value;
+    var email=form1.email.value
+	var telefone=form1.telefone.value;
+    var cidade=form1.cidade.value;
+
+    if (nome ==""){
+    alert ('digite o seu nome');
+    form1.nome.focus();
+    return false;
+    }
+
+    if (email ==""){
+    alert ('digite o seu e-mail');
+    form1.email.focus();
+    return false;
+    }
+	
+   if (telefone ==""){
+   alert ('preencha o campo com seu telefone');
+   form1.telefone.focus();
+   return false;
+   }
+
+    if (cidade ==""){
+    alert ('selecione a sua cidade');
+    form1.cidade.focus();
+    return false;
+    }
+    }
+	</script>
+	<body>
+<nav id="menu">
+   <ul>
+   <li> <a href="index.html">Home</a></li>
+   <li> <a href="Biografia.html">Biografia</a></li>
+   <li> <a href="Moda.html">Moda</a></li>
+   <li> <a href="Musicas.html">Músicas</a></li>
+   <li> <a href="Galeria.html">Galeria</a></li>
+   <li> <a href="Contato.html">Contato</a></li>
+   </ul>
+</nav>	
+</body>
+	<body>
+	<br><br><br><br><br><br>
+	<h3> <u> Contato </h3> </u/>
+    <form name="form1" action="confirmando.html" method="post">
+    Nome: <input type="text" name="nome"><br/><br/>
+    Endereço: <input type="text" name="endereco"><br/><br/>
+	Telefone:<input name="telefone" type="text"><br/><br/>
+    Cidade: <select name="cidade">
+    <option>Hortolândia</option>
+    <option>Campinas</option>
+    <option>Sumaré</option>
+    <option>Paulinia</option>
+    </select><br/><br/>
+	<div class="field radiobox">
+    <span><h3>Deseja receber nossas novidades?</h3></span>
+    <input type="radio" name="novidades" id="sim" value="sim" checked><label for="sim">Sim</label>
+    <input type="radio" name="novidades" id="nao" value="nao"><label for="nao">Não</label>
+    </div>
+	<br>
+	<textarea style="resize: none"></textarea>
+   
+    <input type="submit" onclick="return validar()" value="Enviar">
+    <input type="reset" name="limpa" value="Limpar">
+    </form>
+    <hr>
+    <center> <h5> Mariana Freitas 2023 Trabalho acadêmico - sem fins lucrativos- &copyTodos os direitos reservados </h5> </center>
+    </body>
+</html>
